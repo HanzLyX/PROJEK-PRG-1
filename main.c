@@ -1,6 +1,52 @@
-#include <stdio.h>
+ #include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+#include <windows.h>
+#include "Master/User.h"
+#include "Master/Role.h"
+// #include "Master/Admin.h"
 
-int main(void) {
-    printf("Hello, World!\n");
-    return 0;
+#define ENTER 13
+#define BACKSPACE 8
+
+
+void scanInputPassword(char text[50]) {
+    char ch;
+    int i = 0;
+
+    while (1) {
+
+        ch = getch();
+        if (ch == ENTER ) {
+            text[i] = '\0';
+            break;
+        }if(ch == BACKSPACE) {
+
+            i--;
+            printf("\b \b");
+        }
+        else{
+            text[i] = ch;
+            printf("*");
+            i++;
+        }
+
+    }
+    printf("\n%s\n",text);
 }
+
+main(){
+
+    fullscreen();
+    Sleep(100);
+    system("color 57");
+
+    user();
+    // iniKasir();
+    //iniAdmin();
+    // char text[50];
+    // scanInputPassword(text);
+    getch();
+}
+
