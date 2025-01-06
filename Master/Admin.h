@@ -7,7 +7,7 @@ min adm;
 
 FILE *Data, *Temp;
 
-//void Admin() {
+void Admin() {
     int jumlah;
     system("cls");
 

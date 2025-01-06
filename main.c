@@ -4,6 +4,7 @@
 #include <string.h>
 #include <windows.h>
 #include "Master/User.h"
+#include "Master/Design.h"
 #include "Master/Role.h"
 // #include "Master/Admin.h"
 
@@ -39,14 +40,16 @@ void scanInputPassword(char text[50]) {
 main(){
 
     fullscreen();
-    Sleep(100);
-    system("color 57");
+    Sleep(200);
+    // system("color 70");
 
-    user();
+    // user();
     // iniKasir();
     //iniAdmin();
     // char text[50];
     // scanInputPassword(text);
+    HalDashboard();
+    HalLogin();
     getch();
 }
 

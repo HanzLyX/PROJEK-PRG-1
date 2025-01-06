@@ -77,37 +77,8 @@ void user() {
 
     // system("color 02");
     // _sleep(300);
-    int i, x, y;
-    PrintFile("..//Tampilan//Dashboard.txt", 70, 10);
-    PrintFile("..//Tampilan//gambar.txt", 70, 20);
-    gotoxy(0, 0);
-    printf("%c", 206);      //kiri atas
-    gotoxy(208, 0);
-    printf("%c", 206);      //kanan atas
-    gotoxy(208, 55);
-    printf("%c", 206);      //kanan bawah
-    gotoxy(0, 55);
-    printf("%c", 206);      //kiri bawah
-    for (x = 1;x <= 207; x++) {           //atas tengah
-        system("color 02");
-        gotoxy(x,0);
-        printf("%c", 205);
-    }
-    for (y = 1;y <= 54; y++) {            //kiri tengah
-        system("color 02");
-        gotoxy(0,y);
-        printf("%c", 186);
-    }
-    for (y = 1;y <= 54; y++) {            //kanan tengah
-        system("color 02");
-        gotoxy(208,y);
-        printf("%c", 186);
-    }
-    for (x = 1;x <= 207; x++) {           //bawah tengah
-        system("color 02");
-        gotoxy(x,55);
-        printf("%c", 205);
-    }
+
+
 
     do {
     // system("color 07");
